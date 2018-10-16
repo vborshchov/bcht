@@ -8,16 +8,16 @@ var getQueenPossiblePoints = function(point) {
         if (i !== point.x && i !== point.y) {
             result.push({x: point.x, y: i})
             result.push({x: i, y: point.y})
-            if (point.x - i > 0 && point.y - i > 0) { result.push({x: point.x - i, y: point.y - i});}
-            if (point.x - i > 0 && point.y + i < 9) { result.push({x: point.x - i, y: point.y + i});}
-            if (point.x + i < 9 && point.y - i > 0) { result.push({x: point.x + i, y: point.y - i});}
-            if (point.x + i < 9 && point.y + i < 9) { result.push({x: point.x + i, y: point.y + i});}
         }
+        if (point.x - i > 0 && point.y - i > 0) { result.push({x: point.x - i, y: point.y - i});}
+        if (point.x - i > 0 && point.y + i < 9) { result.push({x: point.x - i, y: point.y + i});}
+        if (point.x + i < 9 && point.y - i > 0) { result.push({x: point.x + i, y: point.y - i});}
+        if (point.x + i < 9 && point.y + i < 9) { result.push({x: point.x + i, y: point.y + i});}
     }
     return result;
 }
 
-var times = 1000000
-var point = {x:5, y:6}
+var times = 1
+var point = {x:1, y:1}
 
 bench(getQueenPossiblePoints, times, [point], this)
