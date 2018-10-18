@@ -1,0 +1,23 @@
+{
+  "name": "blockchain_test",
+  "version": "1.0.0",
+  "description": "Each task in separate file with corresponding name. To run programs you need install **Node.js** on your computer. To run task number 1 run in terminal",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vborshchov/bcht.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vborshchov/bcht/issues"
+  },
+  "homepage": "https://github.com/vborshchov/bcht#readme",
+  "dependencies": {
+    "jsrsasign": "^8.0.12",
+    "jsrsasign-util": "^1.0.0"
+  }
+}
